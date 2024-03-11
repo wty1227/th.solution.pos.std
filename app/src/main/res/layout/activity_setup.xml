@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BaseLayoutStyle">
+
+    <include layout="@layout/lt_top_white"/>
+
+    <!--<include layout="@layout/content_login" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_m"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.76"
+                android:paddingLeft="20dp"
+                android:text="服务器url:"
+                android:textSize="16sp" />
+            <cn.th.phonerf.view.CleanableEditText
+                android:id="@+id/txtBaseApiUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.24"
+                android:background="@color/transparent"
+                android:drawablePadding="@dimen/dp5"
+                android:drawableRight="@drawable/ic_edit_del_normal"
+                android:hint="请输入代码"
+                android:maxLength="50"
+                android:paddingBottom="@dimen/dp15"
+                android:paddingRight="@dimen/dp10"
+                android:paddingTop="@dimen/dp15"
+                android:singleLine="true"
+                android:textColorHint="@color/black_hint" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.76"
+                android:paddingLeft="20dp"
+                android:text="门店名称:"
+                android:textSize="16sp" />
+            <cn.th.phonerf.view.CleanableEditText
+                android:id="@+id/txtBranchName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.24"
+                android:background="@color/transparent"
+                android:drawablePadding="@dimen/dp5"
+                android:drawableRight="@drawable/ic_edit_del_normal"
+                android:hint="请输入门店名称"
+                android:maxLength="50"
+                android:paddingBottom="@dimen/dp15"
+                android:paddingRight="@dimen/dp10"
+                android:paddingTop="@dimen/dp15"
+                android:singleLine="true"
+                android:textColorHint="@color/black_hint" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/black_hint"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingTop="@dimen/dp10"
+        android:text="型号"
+        android:textSize="@dimen/sp16"
+        android:textStyle="bold" />
+    <RadioGroup
+        android:id="@+id/rbPrintName"
+        android:layout_margin="@dimen/dp20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="none"
+            android:text="无" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="hisense"
+            android:text="海信" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/setup_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp20"
+        android:background="@drawable/button_selector_primary"
+        android:enabled="true"
+        android:text="设  置"
+        android:textColor="@color/white_m"
+        android:textSize="@dimen/sp18"/>
+
+
+
+</LinearLayout>

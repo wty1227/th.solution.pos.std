@@ -1,0 +1,181 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BaseLayoutStyle">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_m">
+        
+        <!--销售区域-->
+        <LinearLayout
+            android:id="@+id/left_con"
+            android:layout_width="@dimen/dp405"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+
+
+            <!--销售明细-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="@dimen/dp60"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|center"
+                        android:text="序号"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.41"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/lb0"
+                        android:gravity="center_vertical|center"
+                        android:text="品名"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.16"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|center"
+                        android:text="数量"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical|center"
+                        android:text="价格"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.23"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical|center"
+                        android:text="小计"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </LinearLayout>
+            <ListView
+                android:id="@+id/gvSaleFlow"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/grid_back">
+            </ListView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_m"/>
+            <!--数量 金额-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="@dimen/dp140"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|right"
+                        android:text="数  量:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp38"/>
+
+                    <TextView
+                        android:id="@+id/lbQty"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/lb0"
+                        android:gravity="center_vertical|left"
+                        android:text="00.00"
+                        android:hint=""
+                        android:textColor="@color/darkorange"
+                        android:textSize="@dimen/sp38"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="@dimen/dp140"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|right"
+                        android:text="金  额:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp38"/>
+                    <TextView
+                        android:id="@+id/lbAmt"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical|left"
+                        android:text="00.00"
+                        android:hint=""
+                        android:textColor="@color/darkorange"
+                        android:textSize="@dimen/sp38"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/black_m"/>
+
+        </LinearLayout>
+
+        <!--遮罩层-->
+        <LinearLayout
+            android:id="@+id/zzc"
+            android:layout_width="405dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <!--商品区域-->
+        <LinearLayout
+            android:layout_toRightOf="@+id/left_con"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_m"
+            android:orientation="horizontal">
+
+            <com.youth.banner.Banner
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

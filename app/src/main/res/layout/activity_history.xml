@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BaseLayoutStyle">
+
+    <include layout="@layout/lt_top_white"/>
+
+    <TextView
+        android:id="@+id/history_lbDaySum"
+        android:text="今日汇总："
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"
+        android:hint="12344"/>
+    <ListView
+        android:id="@+id/history_lvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        tools:ignore="InvalidId">
+
+    </ListView>
+</RelativeLayout>

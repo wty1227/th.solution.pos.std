@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BaseLayoutStyle">
+
+    <LinearLayout
+        android:id="@+id/ls_history_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white_m"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ls_history_flowId"
+            android:hint="01"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:textColor="@color/blue_m"
+            android:gravity="center"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black_hint"/>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/ls_history_lbOperDate"
+                    android:hint="2018-10-10 12:20:33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/ls_history_lbConsumerAmt"
+                    android:hint="999,99.00"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginRight="5dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_m"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/ls_history_lbCardId"
+                    android:hint="88888800001"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/ls_history_lbOperType"
+                    android:hint="消费"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginRight="5dp"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ls_history_btnUnConsumer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/press_white_t_gray"
+            android:drawableTop="@mipmap/ic_action_unconsumer"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="红冲"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

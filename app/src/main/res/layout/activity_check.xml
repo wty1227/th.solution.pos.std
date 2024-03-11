@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BaseLayoutStyle"
+    android:background="@color/white_m"
+    android:orientation="vertical">
+
+    <include layout="@layout/lt_top_white"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:background="@drawable/border"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_layout"
+            android:text=""
+            android:textSize="@dimen/sp22"/>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="39dp">
+
+            <TextView
+                android:id="@+id/report_lbBgnDate"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:text="日期范围:"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/report_lbBgnDate"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/txtBgnDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="false"
+                    android:text="2017-04-01"
+                    android:textColor="@color/blue_m"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:text=" - "
+                    />
+                <EditText
+                    android:id="@+id/txtEndDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:text="2017-05-01"
+                    android:textColor="@color/blue_m"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnToday"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/dp1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center"
+                android:background="@drawable/shape_primary_color"
+                android:textColor="@color/white_m"
+                android:text="今天"
+                />
+            <Button
+                android:id="@+id/btnYesterday"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/dp1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center"
+                android:background="@drawable/shape_primary_color"
+                android:textColor="@color/white_m"
+                android:text="昨天"
+                />
+            <Button
+                android:id="@+id/btnWeek"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/dp1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center"
+                android:background="@drawable/shape_primary_color"
+                android:textColor="@color/white_m"
+                android:text="本周"
+                />
+            <Button
+                android:id="@+id/btnMoon"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/dp1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center"
+                android:background="@drawable/shape_primary_color"
+                android:textColor="@color/white_m"
+                android:text="本月"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp2"
+            android:background="@color/white_m"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+<!--        <Button-->
+<!--            android:id="@+id/btnFind"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_margin="@dimen/dp1"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center_vertical|center"-->
+<!--            android:background="#FF6600"-->
+<!--            android:textColor="@color/white_m"-->
+<!--            android:text="查询"/>-->
+
+        <Button
+            android:id="@+id/btnPrinting"
+            android:layout_width="100dp"
+            android:layout_margin="@dimen/dp1"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:background="#FF6600"
+            android:textColor="@color/white_m"
+            android:text="打印"
+            android:layout_marginLeft="10dp"/>
+
+        <CheckBox
+            android:id="@+id/ckbAll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="本机所有账目"
+            android:layout_marginLeft="10dp">
+
+
+        </CheckBox>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp10"
+        android:background="@color/white_m"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp10"
+        android:background="@drawable/border"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_layout"
+            android:text="对账单"
+            android:textSize="@dimen/sp22"/>
+
+        <TextView
+            android:id="@+id/lbMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp20"
+            android:text=""
+            android:textSize="@dimen/sp16"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_m"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include layout="@layout/lt_top_white"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp01"
+        android:background="@color/black_hint"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black_hint"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_hint"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="第一步:  输入营业员"
+                    android:paddingTop="10dp"
+                    android:textSize="20sp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/saleMan"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/dp15"
+                        android:paddingRight="@dimen/dp10"
+                        android:paddingTop="@dimen/dp15"
+                        android:textSize="20sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/saleManName"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/dp15"
+                        android:paddingRight="@dimen/dp10"
+                        android:paddingTop="@dimen/dp15"
+                        android:textSize="20sp"></TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_hint"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnTotNum7"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="7"
+                            android:focusable="false"
+
+                            android:textColor="@color/white_m"
+                            android:textSize="36sp"
+                            android:background="@color/grey"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            />
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/black_hint"/>
+                        <Button
+                            android:id="@+id/btnTotNum8"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="8"
+                            android:focusable="false"
+                            android:textColor="@color/white_m"
+                            android:textSize="36sp"
+                            android:background="@color/grey"/>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/black_hint"/>
+                        <Button
+                            android:id="@+id/btnTotNum9"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="9"
+                            android:focusable="false"
+                            android:textColor="@color/white_m"
+                            android:textSize="36sp"
+                            android:background="@color/grey"/>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/black_hint"/>
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/black_hint"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnTotNum4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="4"
+                            android:focusable="false"
+                            android:textColor="@color/white_m"
+                            android:textSize="36sp"
+                            android:background="@color/grey"/>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/black_hint"/>
+                        <Button
+                            android:id="@+id/btnTotNum5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="5"
+                            android:focusable="false"
+                            android:textColor="@color/white_m"
+                            android:textSize="36sp"
+                            android:background="@color/grey"/>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/black_hint"/>
+                        <Button
+                            android:id="@+id/btnTotNum6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="6"
+                            android:focusable="false"
+                            android:textColor="@color/white_m"
+                            android:textSize="36sp"
+                            android:background="@color/grey"/>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/black_hint"/>
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/black_hint"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnTotNum1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="1"
+                            android:focusable="false"
+                            android:textColor="@color/white_m"
+                            android:textSize="36sp"
+                            android:background="@color/grey"/>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/black_hint"/>
+                        <Button
+                            android:id="@+id/btnTotNum2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="2"
+                            android:focusable="false"
+                            android:textColor="@color/white_m"
+                            android:textSize="36sp"
+                            android:background="@color/grey"/>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/black_hint"/>
+                        <Button
+                            android:id="@+id/btnTotNum3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="3"
+                            android:focusable="false"
+                            android:textColor="@color/white_m"
+                            android:textSize="36sp"
+                            android:background="@color/grey"/>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/black_hint"/>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/black_hint"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnTotNum0"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="0"
+                            android:focusable="false"
+                            android:textColor="@color/white_m"
+                            android:textSize="36sp"
+                            android:background="@color/grey"/>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/black_hint"/>
+                        <Button
+                            android:id="@+id/btnTotDot"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="00"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white_m"
+                            android:textSize="36sp"
+                            android:background="@color/grey"/>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/black_hint"/>
+                        <Button
+                            android:id="@+id/btnTotNumBackspace"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="退格"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white_m"
+                            android:textSize="36sp"
+                            android:background="@color/grey"/>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/black_hint"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/btnTotNumEnter"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="确定"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white_m"
+                        android:textSize="36sp"
+                        android:background="@color/black_s1"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="第二步:  扫描单号"
+                    android:paddingTop="20dp"
+                    android:textSize="20sp"></TextView>
+
+                <cn.th.phonerf.view.CleanableEditText
+                    android:id="@+id/txtBarcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:drawableRight="@drawable/ic_edit_del_normal"
+                    android:drawablePadding="@dimen/dp5"
+                    android:hint="请扫描手机订单号"
+                    android:imeOptions="actionDone"
+                    android:paddingTop="@dimen/dp15"
+                    android:paddingRight="@dimen/dp10"
+                    android:paddingBottom="@dimen/dp15"
+                    android:singleLine="true"
+                    android:textColorHint="@color/black_hint" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lbMsg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:textColor="@color/red_m"
+                android:textSize="20sp"
+                android:text="消息:" />
+
+        </LinearLayout>
+        <!--键盘-->
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/black_hint"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@mipmap/intro_exceptflow">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

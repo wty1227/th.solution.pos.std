@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_m"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp80"
+        android:background="@color/page_bg">
+        <TextView
+            android:id="@+id/lbTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/dp10"
+            android:text="收银结算"
+            android:textColor="@color/black_m"
+            android:textSize="@dimen/sp28" />
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/ic_action_close"
+            android:layout_marginRight="@dimen/dp5"
+            android:gravity="left|center_vertical"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp01"
+        android:background="@color/black_hint"
+        />
+
+    <TextView
+        android:id="@+id/lbDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp15"
+        android:lineSpacingExtra="@dimen/dp5"
+        android:text="描述：该条流水有支付记录\n请选择下列选项："
+        android:gravity="center_horizontal"
+        android:textColor="@color/black_m"
+        android:textSize="@dimen/sp16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp01"
+        android:background="@color/black_hint" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="@dimen/dp10"
+        android:text="扫码"
+        android:textColor="@color/lightgray"
+        android:textSize="@dimen/sp18" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp01"
+        android:background="@color/black_hint" />
+
+    <LinearLayout
+        android:id="@+id/dialog_select_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnContinue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="直接查询支付结果"
+                android:textColor="@color/yellow_m"
+                android:textSize="@dimen/sp20" />
+
+            <View
+                android:layout_width="@dimen/dp01"
+                android:layout_height="match_parent"
+                android:background="@color/black_hint" />
+
+            <Button
+                android:id="@+id/btnPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="重新扫描支付"
+                android:textColor="@color/blue_m"
+                android:textSize="@dimen/sp20" />
+        </LinearLayout>
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp01"
+            android:background="@color/black_hint" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="@dimen/dp10"
+            android:text="其他支付"
+            android:textColor="@color/lightgray"
+            android:textSize="@dimen/sp18" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp01"
+            android:background="@color/black_hint" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnPayZf6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="其他支付"
+                android:textColor="@color/blue_m"
+                android:textSize="@dimen/sp16"/>
+
+            <View
+                android:layout_width="@dimen/dp01"
+                android:layout_height="match_parent"
+                android:background="@color/black_hint" />
+
+
+            <Button
+                android:id="@+id/btnPayRMB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="人民币支付"
+                android:textColor="@color/blue_m"
+                android:textSize="@dimen/sp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp01"
+            android:background="@color/black_hint" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="@dimen/dp10"
+            android:text="其他"
+            android:textColor="@color/lightgray"
+            android:textSize="@dimen/sp18" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp01"
+            android:background="@color/black_hint" />
+
+        <Button
+            android:id="@+id/btnJoinFlow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:text="加入普通销售流水"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/sp16"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp01"
+            android:background="@color/black_hint" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

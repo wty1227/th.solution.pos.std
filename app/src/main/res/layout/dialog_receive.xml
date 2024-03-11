@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_m"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dialog_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dp10"
+        android:text="收货"
+        android:textColor="@color/black_m"
+        android:textSize="@dimen/sp18" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp01"
+        android:background="@color/black_hint"
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp35">
+
+        <TextView
+            android:id="@+id/lb0"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left"
+            android:text="条码:"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/receive_txtItemNo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/lb0"
+            android:gravity="center_vertical|left"
+            android:text=""
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:id="@+id/lb2"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|left"
+            android:text="名称:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/receive_txtItemName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/lb2"
+            android:gravity="center_vertical|left"
+            android:text=""
+            android:textColor="@color/darkred"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:id="@+id/lb21"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|left"
+            android:text="应收:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/receive_txtOrderQty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/lb21"
+            android:gravity="center_vertical|left"
+            android:text=""
+            android:textColor="@color/darkred"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/lb3"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|left"
+            android:textSize="20sp"
+            android:text="数量:" />
+
+        <TextView
+            android:id="@+id/receive_txtQty"
+            android:layout_width="@dimen/dp70"
+            android:hint="请录入数量"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/lb3"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:text=""
+            android:textColor="@color/blue_m"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/receive_btnRet"
+            android:layout_width="@dimen/dp45"
+            android:layout_height="@dimen/dp45"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_toRightOf="@id/receive_txtQty"
+            android:background="@drawable/button_selector_primary"
+            android:text="负"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/receive_btnRet"
+            android:layout_toLeftOf="@+id/receive_txtPreQty"
+            android:gravity="center_vertical|right"
+            android:textSize="20sp"
+            android:text="已收:  "
+            android:textColor="@color/gray"/>
+
+        <TextView
+            android:id="@+id/receive_txtPreQty"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|left"
+            android:textSize="20sp"
+            android:text="0.00"
+            android:textColor="@color/gray"/>
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/receive_lbMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red_m"
+        android:text="消息:" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp01"
+        android:background="@color/black_hint" />
+
+    <LinearLayout
+        android:id="@+id/dialog_select_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/receive_cancel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:text="取消"
+            android:textColor="@color/blue_m"
+            android:textSize="@dimen/sp16" />
+
+        <View
+            android:layout_width="@dimen/dp01"
+            android:layout_height="match_parent"
+            android:background="@color/black_hint" />
+
+        <Button
+            android:id="@+id/receive_ok_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:text="确定"
+            android:textColor="@color/blue_m"
+            android:textSize="@dimen/sp16" />
+    </LinearLayout>
+
+    <!--键盘-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black_hint"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/receive_btn7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="7"
+                android:focusable="false"
+
+                android:textColor="@color/gray"
+                android:textSize="26sp"
+                android:background="@color/white_m"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black_hint"/>
+            <Button
+                android:id="@+id/receive_btn8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white_m"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="8"
+                android:focusable="false"
+                android:textColor="@color/gray"
+                android:textSize="26sp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black_hint"/>
+            <Button
+                android:id="@+id/receive_btn9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white_m"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="9"
+                android:focusable="false"
+                android:textColor="@color/gray"
+                android:textSize="26sp"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black_hint"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/receive_btn4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white_m"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="4"
+                android:focusable="false"
+                android:textColor="@color/gray"
+                android:textSize="26sp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black_hint"/>
+            <Button
+                android:id="@+id/receive_btn5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white_m"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="5"
+                android:focusable="false"
+                android:textColor="@color/gray"
+                android:textSize="26sp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black_hint"/>
+            <Button
+                android:id="@+id/receive_btn6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white_m"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="6"
+                android:focusable="false"
+                android:textColor="@color/gray"
+                android:textSize="26sp"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black_hint"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/receive_btn1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white_m"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="1"
+                android:focusable="false"
+                android:textColor="@color/gray"
+                android:textSize="20sp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black_hint"/>
+            <Button
+                android:id="@+id/receive_btn2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white_m"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="2"
+                android:focusable="false"
+                android:textColor="@color/gray"
+                android:textSize="26sp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black_hint"/>
+            <Button
+                android:id="@+id/receive_btn3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white_m"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="3"
+                android:focusable="false"
+                android:textColor="@color/gray"
+                android:textSize="26sp"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black_hint"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/receive_btn0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white_m"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0"
+                android:focusable="false"
+                android:textColor="@color/gray"
+                android:textSize="20sp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black_hint"/>
+            <Button
+                android:id="@+id/receive_btnDot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white_m"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="."
+                android:focusable="false"
+                android:textColor="@color/gray"
+                android:textSize="26sp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black_hint"/>
+            <Button
+                android:id="@+id/receive_btnBackspace"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white_m"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="＜"
+                android:focusable="false"
+                android:textColor="@color/gray"
+                android:textSize="26sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

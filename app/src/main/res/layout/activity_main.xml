@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BaseLayoutStyle"
+    android:orientation="vertical">
+
+    <include layout="@layout/lt_top_white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingTop="@dimen/dp10"
+        android:text="个人信息"
+        android:textSize="@dimen/sp16"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingTop="@dimen/dp10">
+
+        <TextView
+            android:id="@+id/main_lbBranchNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/main_lbOperId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingTop="@dimen/dp10"
+        android:text="功能菜单"
+        android:textSize="@dimen/sp16"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/main_btnQuery"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_white_t_gray"
+                    android:drawableTop="@mipmap/ic_action_query"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="查询" />
+
+
+                <TextView
+                    android:id="@+id/main_btnPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_white_t_gray"
+                    android:drawableTop="@mipmap/ic_action_flag"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="打印" />
+
+                <TextView
+                    android:id="@+id/main_btnStocktake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_white_t_gray"
+                    android:drawableTop="@mipmap/ic_action_stock"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="点货单" />
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/main_btnBtSetup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_white_t_gray"
+                    android:drawableTop="@mipmap/ic_action_bt"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="蓝牙设置" />
+
+                <TextView
+                    android:id="@+id/main_btnModifyPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_white_t_gray"
+                    android:drawableTop="@mipmap/ic_action_user"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="修改密码" />
+
+                <TextView
+                    android:id="@+id/main_btnDownload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_white_t_gray"
+                    android:drawableTop="@mipmap/ic_action_sync"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="下载资料" />
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/main_btnRptStock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_white_t_gray"
+                    android:drawableTop="@mipmap/ic_action_batch_rpt"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="报表1" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_white_t_gray"
+                    android:drawableTop="@mipmap/ic_action_user"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="修改密码"
+                    android:visibility="invisible"/>
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_white_t_gray"
+                    android:drawableTop="@mipmap/ic_action_sync"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="下载资料"
+                    android:visibility="invisible"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingTop="@dimen/dp10"
+                android:text="设备信息"
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingTop="@dimen/dp10">
+
+                <TextView
+                    android:id="@+id/main_lbBtAddr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5px"
+                    android:gravity="bottom"
+                    android:text="蓝牙地址:" />
+
+                <TextView
+                    android:id="@+id/main_lbCommPort"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5px"
+                    android:gravity="bottom"
+                    android:text="商品:" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.th.phonerf.activity.historysheet.HistorySheetActivity">
+
+    <include
+        layout="@layout/lt_top_white"
+        android:id="@+id/header"/>
+
+    <ScrollView
+        android:id="@+id/scr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_above="@id/btn">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="付款信息："
+                android:textSize="26sp"
+                android:paddingTop="20dp"
+                android:textColor="@color/black"></TextView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/payflow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="商品信息："
+                android:textSize="26sp"
+                android:paddingTop="20dp"
+                android:textColor="@color/black"></TextView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/saleflow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:id="@+id/upper_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="上一单"
+                android:background="@drawable/border"
+                android:textSize="26sp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/printing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="打印"
+                android:background="@drawable/border"
+                android:textSize="26sp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/next_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/border"
+                android:text="下一单"
+                android:textSize="26sp"></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/noneText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="暂无收款信息"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:visibility="gone">
+
+    </TextView>
+
+
+</RelativeLayout>

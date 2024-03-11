@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/scan"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp45">
+
+
+
+    <EditText
+        android:id="@+id/query_txtQuery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_action_txt_query"
+        android:background="@drawable/shape_primary_color"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dp2"
+        android:layout_marginBottom="@dimen/dp2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="65dp"
+        android:singleLine="true"
+        android:inputType="number"
+        android:imeOptions="actionSearch"
+        android:text=""
+        android:nextFocusDown="@id/query_txtQuery"
+        />
+    <Button
+        android:id="@+id/query_btnQuery"
+        android:background="@mipmap/ic_action_name_scan"
+        android:textColor="#fff"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"/>
+
+</RelativeLayout>

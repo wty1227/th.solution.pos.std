@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BaseLayoutStyle">
+
+    <include layout="@layout/lt_top_white"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/receiverpt_btnQueryReceive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:text="收货信息"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/sp16" />
+
+        <View
+            android:layout_width="@dimen/dp01"
+            android:layout_height="match_parent"
+            android:background="@color/black_hint" />
+
+        <Button
+            android:id="@+id/receiverpt_btnQueryPO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:text="配送信息"
+            android:textColor="@color/blue_m"
+            android:textSize="@dimen/sp16" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp01"
+        android:background="@color/black_hint" />
+
+    <RelativeLayout
+        android:id="@+id/receiverpt_lySheetList"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/receiverpt_lbSheetNo"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left"
+            android:text="收货编号:"
+            android:textColor="@color/black_m"
+            android:textSize="@dimen/sp18" />
+
+        <Spinner
+            android:id="@+id/receiverpt_spSheetNo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/receiverpt_lbSheetNo"
+            android:gravity="center_vertical|left"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text=""
+            android:textColor="@color/black_m"
+            android:textSize="@dimen/sp18"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp20"
+        android:background="@color/white_m"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/receiverpt_lbStaticFlowId"
+            android:text="#"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/orange"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black_hint"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/receiverpt_lbStaticItemName"
+                android:text="商品信息"
+                android:layout_width="@dimen/dp160"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/orange"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black_hint"/>
+            <TextView
+                android:id="@+id/receiverpt_lbStaticOrderQty"
+                android:text="配送数量"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/orange"/>
+
+            <TextView
+                android:id="@+id/receiverpt_lbStaticRealQty"
+                android:text="收货数量"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/orange"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp01"
+        android:background="@color/black_hint"
+        />
+
+    <ListView
+        android:id="@+id/receiverpt_lvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

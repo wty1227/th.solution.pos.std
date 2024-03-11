@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_m"
+    android:gravity="center_horizontal">
+    <LinearLayout
+        android:id="@+id/dialog_receipt_sheet_lySheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/dialog_receipt_sheet_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:text="收货单"
+            android:textColor="@color/black_m"
+            android:textSize="@dimen/sp18" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp01"
+            android:background="@color/black_hint"
+            />
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="39dp">
+
+            <TextView
+                android:id="@+id/dialog_receipt_sheet_lbBgnDate"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:text="日期范围:"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/dialog_receipt_sheet_lbBgnDate"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/dialog_receipt_sheet_txtBgnDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="false"
+                    android:text="2017-04-01"
+                    android:textColor="@color/blue_m"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:text=" - "
+                    />
+                <EditText
+                    android:id="@+id/dialog_receipt_sheet_txtEndDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_toRightOf="@+id/sheetlist_txtBgnDate"
+                    android:gravity="center_vertical|left"
+                    android:text="2017-05-01"
+                    android:textColor="@color/blue_m"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp01"
+            android:background="@color/black_hint"
+            />
+        <ListView
+            android:id="@+id/dialog_receipt_sheet_lvSheet"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp180"
+            android:padding="@dimen/dp15"
+            android:textColor="@color/black_m">
+
+        </ListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp01"
+            android:background="@color/black_hint" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/dialog_receipt_sheet_sel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="全选"
+                android:textColor="@color/blue_m"
+                android:textSize="@dimen/sp16" />
+
+            <View
+                android:layout_width="@dimen/dp01"
+                android:layout_height="match_parent"
+                android:background="@color/black_hint" />
+
+            <Button
+                android:id="@+id/dialog_receipt_sheet_unsel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="全清"
+                android:textColor="@color/blue_m"
+                android:textSize="@dimen/sp16" />
+
+            <View
+                android:layout_width="@dimen/dp01"
+                android:layout_height="match_parent"
+                android:background="@color/black_hint" />
+
+            <Button
+                android:id="@+id/dialog_receipt_sheet_query"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="刷新"
+                android:textColor="@color/blue_m"
+                android:textSize="@dimen/sp16" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp01"
+            android:background="@color/black_hint" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/dialog_receipt_sheet_btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="取消"
+                android:textColor="@color/red_m"
+                android:textSize="@dimen/sp16" />
+
+            <View
+                android:layout_width="@dimen/dp01"
+                android:layout_height="match_parent"
+                android:background="@color/black_hint" />
+
+            <Button
+                android:id="@+id/dialog_receipt_sheet_btnNext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="下一步"
+                android:textColor="@color/red_m"
+                android:textSize="@dimen/sp16" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_receipt_sheet_lyContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/dialog_content_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:text="收货内容"
+            android:textColor="@color/black_m"
+            android:textSize="@dimen/sp18" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp01"
+            android:background="@color/black_hint"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp20"
+            android:background="@color/white_m"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:text="#"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/blue"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black_hint"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="商品信息"
+                    android:layout_width="@dimen/dp160"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/blue"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black_hint"/>
+
+                <TextView
+                    android:text="配送数量"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/blue"/>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp01"
+            android:background="@color/black_hint"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp01"
+            android:background="@color/black_hint"
+            />
+        <ListView
+            android:id="@+id/dialog_receipt_sheet_lvContent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp280"
+            android:padding="@dimen/dp15"
+            android:textColor="@color/black_m">
+
+        </ListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp01"
+            android:background="@color/black_hint" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/dialog_receipt_sheet_btnPreContent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="上一步"
+                android:textColor="@color/yellow_m"
+                android:textSize="@dimen/sp16" />
+
+            <View
+                android:layout_width="@dimen/dp01"
+                android:layout_height="match_parent"
+                android:background="@color/black_hint" />
+
+            <Button
+                android:id="@+id/dialog_receipt_sheet_btnDownload"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="下载"
+                android:textColor="@color/red_m"
+                android:textSize="@dimen/sp16" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp01"
+            android:background="@color/black_hint" />
+
+
+
+    </LinearLayout>
+</LinearLayout>

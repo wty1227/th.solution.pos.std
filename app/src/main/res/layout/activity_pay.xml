@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BaseLayoutStyle"
+    android:orientation="vertical">
+    <include layout="@layout/lt_top_primary_color_text" />
+
+    <TextView
+        android:id="@+id/lbSaleQnty"
+        android:layout_marginTop="@dimen/dp30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp20"
+        android:gravity="center"
+        android:text="应付(共1.0件)" />
+
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbSaleAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="@dimen/sp60"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="￥0.00" />
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp40"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp320"
+                android:background="@color/page_bg"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginTop="@dimen/dp20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp26"
+                    android:gravity="center"
+                    android:text="请将付款码置于下方" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp26"
+                    android:gravity="center"
+                    android:text="扫描口处" />
+
+                <TextView
+                    android:id="@+id/btnCancel"
+                    android:layout_marginTop="@dimen/dp30"
+                    android:layout_width="@dimen/dp300"
+                    android:layout_height="@dimen/dp60"
+                    android:text="取消支付( 180 秒 )"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/sp26"
+                    android:textColor="@color/gray"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/shape_white_color"/>
+
+                <TextView
+                    android:id="@+id/btnTest"
+                    android:layout_marginTop="@dimen/dp30"
+                    android:layout_width="@dimen/dp300"
+                    android:layout_height="@dimen/dp60"
+                    android:text="test"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/sp26"
+                    android:textColor="@color/gray"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/shape_white_color"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/lbInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""/>
+                
+                
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lbMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="消息："
+                android:textColor="@color/red"
+                android:textSize="@dimen/sp26"/>
+        </LinearLayout>
+
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp300"
+        android:scaleType="fitXY"
+        android:src="@mipmap/scan_ins" />
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/page_bg"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/BaseLayoutStyle">
+
+        <include layout="@layout/lt_top_scan"/>
+        <LinearLayout
+            android:id="@+id/dialog_receipt_sheet_lySheet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/receive_lbResultMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red_m"
+                android:text="消息:" />
+            <!--单据-->
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/receive_lbSheetNo"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:text="收货编号:"
+                    android:textColor="@color/black_m"
+                    android:textSize="@dimen/sp18" />
+
+                <Spinner
+                    android:id="@+id/receive_spSheetNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/receive_lbSheetNo"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center_vertical|left"
+                    android:text=""
+                    android:textColor="@color/black_m"
+                    android:textSize="@dimen/sp18" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp20"
+                android:background="@color/white_m"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:text="#"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/blue"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black_hint"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:text="商品信息"
+                        android:layout_width="@dimen/dp160"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/blue"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black_hint"/>
+                    <TextView
+                        android:text="配送数量"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/blue"/>
+
+                    <TextView
+                        android:text="收货数量"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/blue"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp01"
+                android:background="@color/black_hint"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp01"
+                android:background="@color/black_hint"
+                />
+
+            <ListView
+                android:id="@+id/receive_lvInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/dp15"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/black_m">
+
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabRpt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="1dp"
+        app:srcCompat="@mipmap/ic_action_query"
+        android:visibility="gone"/>
+</RelativeLayout>

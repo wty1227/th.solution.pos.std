@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BaseLayoutStyle"
+    android:orientation="vertical">
+
+    <include layout="@layout/lt_top_white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingTop="@dimen/dp10"
+        android:text="盘点准备"
+        android:textSize="@dimen/sp16"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sel_btnNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_white_t_gray"
+                    android:drawableTop="@mipmap/ic_action_batch_new"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="新建批次" />
+                <TextView
+                    android:id="@+id/sel_btnDownload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_white_t_gray"
+                    android:drawableTop="@mipmap/ic_action_batch_download"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="下载批次" />
+
+                <TextView
+                    android:id="@+id/sel_btnUpload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_white_t_gray"
+                    android:drawableTop="@mipmap/ic_action_batch_upload"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="上传数据" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingTop="@dimen/dp10"
+                android:text="报表"
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/sel_btnRpt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_white_t_gray"
+                    android:drawableTop="@mipmap/ic_action_batch_rpt"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="历史汇总" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_white_t_gray"
+                    android:drawableTop="@mipmap/ic_action_user"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="修改密码"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_white_t_gray"
+                    android:drawableTop="@mipmap/ic_action_sync"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="下载资料"
+                    android:visibility="invisible"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingTop="@dimen/dp10"
+                android:text="请选择盘点批次"
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingTop="@dimen/dp10">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <Spinner
+                    android:id="@+id/spBatchNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/sel_btnOK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp20"
+                android:background="@drawable/button_selector_primary"
+                android:enabled="true"
+                android:text="确   定"
+                android:textColor="@color/white_m"
+                android:textSize="@dimen/sp18"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/BaseLayoutStyle"
+    android:orientation="vertical">
+
+    <include layout="@layout/lt_top_white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector_primary"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:id="@+id/stockrpt_lbSheetNo"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:text="单据编号:"
+                android:textColor="@color/white" />
+
+            <Spinner
+                android:id="@+id/stockrpt_spSheetNo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/stockrpt_lbSheetNo"
+                android:gravity="center_vertical|left"
+                android:text=""
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:id="@+id/stockrpt_lbBranchNo"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:text="门店编码:"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/stockrpt_txtBranchNo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/stockrpt_lbBranchNo"
+                android:gravity="center_vertical|left"
+                android:text=""
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:id="@+id/stockrpt_lbBatchNo"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:text="盘点批次:"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/stockrpt_txtBatchNo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/stockrpt_lbBatchNo"
+                android:gravity="center_vertical|left"
+                android:text=""
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+    <Button
+        android:id="@+id/stockrpt_btnQuery"
+        android:text="查  询"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector_primary"/>
+    <ListView
+        android:id="@+id/stockrpt_lvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+</LinearLayout>

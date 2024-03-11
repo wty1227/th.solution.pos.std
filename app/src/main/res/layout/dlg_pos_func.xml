@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BaseLayoutStyle"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp80"
+        android:background="@color/page_bg">
+        <TextView
+            android:id="@+id/lbTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/dp10"
+            android:text="功能选择"
+            android:textColor="@color/black_m"
+            android:textSize="@dimen/sp28" />
+        <ImageButton
+            android:id="@+id/btnCancel"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/page_bg"
+            android:layout_marginRight="@dimen/dp5"
+            android:gravity="left|center_vertical"
+            android:src="@mipmap/ic_action_close"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp01"
+        android:background="@color/black_hint"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btnLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_white_t_gray"
+                    android:drawableTop="@mipmap/ic_action_logout"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="交班退出" />
+
+                <View
+                    android:layout_width="@dimen/dp01"
+                    android:layout_height="match_parent"
+                    android:background="@color/black_hint"
+                    />
+
+                <TextView
+                    android:id="@+id/btnRet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_white_t_gray"
+                    android:drawableTop="@mipmap/ic_action_feedback"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="设置"/>
+                <View
+                    android:layout_width="@dimen/dp01"
+                    android:layout_height="match_parent"
+                    android:background="@color/black_hint"
+                    />
+
+                <TextView
+                    android:id="@+id/btnQueryBill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_white_t_gray"
+                    android:drawableTop="@mipmap/ic_action_querybill"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="交易查询" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp01"
+                android:background="@color/black_hint"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:id="@+id/btnSaleMan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_white_t_gray"
+                    android:drawableTop="@mipmap/ic_action_saleman"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="营业员" />
+                <View
+                    android:layout_width="@dimen/dp01"
+                    android:layout_height="match_parent"
+                    android:background="@color/black_hint"
+                    />
+                <TextView
+                    android:id="@+id/btnModifyPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_white_t_gray"
+                    android:drawableTop="@mipmap/ic_action_key"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="修改密码"/>
+                <View
+                    android:layout_width="@dimen/dp01"
+                    android:layout_height="match_parent"
+                    android:background="@color/black_hint"
+                    />
+                <TextView
+                    android:id="@+id/btnAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_white_t_gray"
+                    android:drawableTop="@mipmap/ic_action_salerpt"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="日结账"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp01"
+                android:background="@color/black_hint"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+
+                <TextView
+                    android:id="@+id/btnExcept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_white_t_gray"
+                    android:drawableTop="@mipmap/ic_action_oper"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="单边账补入" />
+                <View
+                    android:layout_width="@dimen/dp01"
+                    android:layout_height="match_parent"
+                    android:background="@color/black_hint"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_white_t_gray"
+                    android:gravity="center"
+                    android:padding="10dp"/>
+                <View
+                    android:layout_width="@dimen/dp01"
+                    android:layout_height="match_parent"
+                    android:background="@color/black_hint"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/press_white_t_gray"
+                    android:gravity="center"
+                    android:padding="10dp"/>
+                <View
+                    android:layout_width="@dimen/dp01"
+                    android:layout_height="match_parent"
+                    android:background="@color/black_hint"
+                    />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp01"
+                android:background="@color/black_hint"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp100"
+    android:layout_height="@dimen/dp80"
+    android:background="@color/gray"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/lbItemClsno"
+        android:hint="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white_m"/>
+
+    <TextView
+        android:id="@+id/lbItemClsname"
+        android:hint="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white_m"
+        android:singleLine="true"
+        android:ellipsize="end"/>
+
+
+</LinearLayout>

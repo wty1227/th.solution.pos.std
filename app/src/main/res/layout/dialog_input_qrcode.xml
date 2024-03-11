@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/dp80"-->
+<!--        android:background="@color/page_bg">-->
+<!--        <TextView-->
+<!--            android:id="@+id/lbTitle"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginLeft="@dimen/dp10"-->
+<!--            android:gravity="left|center_vertical"-->
+<!--            android:padding="@dimen/dp10"-->
+<!--            android:text="请输入条码"-->
+<!--            android:textColor="@color/black_m"-->
+<!--            android:textSize="@dimen/sp28" />-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/btnTotCancel"-->
+<!--            android:layout_width="@dimen/dp80"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:background="@color/page_bg"-->
+<!--            android:layout_marginRight="@dimen/dp5"-->
+<!--            android:gravity="left|center_vertical"-->
+<!--            android:src="@mipmap/ic_action_close"/>-->
+<!--    </RelativeLayout>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp01"
+        android:background="@color/black_hint"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/qrcode_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:inputType="number"
+            android:nextFocusDown="@id/qrcode_input">
+
+        </EditText>
+
+<!--        <Button-->
+<!--            android:id="@+id/inp_btn"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/btn_green_enable"-->
+<!--            android:text="确定"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="#fff"-->
+<!--            android:gravity="center">-->
+
+<!--        </Button>-->
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
