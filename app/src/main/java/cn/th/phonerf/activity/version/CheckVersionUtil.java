@@ -428,7 +428,7 @@ public class CheckVersionUtil {
 			intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
 			Uri contentUri = FileProvider.getUriForFile(
 					mContext
-					, "cn.th.solution.selfpos.fileprovider"
+					, "cn.th.solution.stdpos.fileprovider"
 					, apkfile);
 			intent.setDataAndType(contentUri, "application/vnd.android.package-archive");
 		} else {

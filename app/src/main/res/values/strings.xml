@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">商航自助收银系统</string>
+    <string name="app_name">商航收银系统</string>
     <string name="action_settings">设定</string>
     <string name="title_activity_login">登  录</string>
 

@@ -168,6 +168,7 @@
                                 android:textColor="@color/black"
                                 android:gravity="center" />
                             <TextView
+                                android:id="@+id/lbSaleTotalAmt"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
@@ -358,6 +359,12 @@
                         android:gravity="center_vertical" />
                 </LinearLayout>
             </LinearLayout>
+            <TextView
+                android:id="@+id/lbMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="消息："
+                android:textColor="@color/red_m"/>
         </LinearLayout>
 
 
@@ -396,6 +403,27 @@
                 android:layout_weight="1"
                 />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp300">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    <android.inputmethodservice.KeyboardView
+                        android:id="@+id/keyboard_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:background="@android:color/darker_gray"
+                        android:keyTextColor="#00ff00"
+                        android:keyPreviewLayout="@layout/keyborad_preview_layout"
+                        android:keyPreviewHeight="40dip"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
@@ -405,8 +433,155 @@
     android:layout_height="1dp"
     android:background="@color/whitesmoke"/>
     <LinearLayout
+        android:padding="@dimen/dp2"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp60" />
+        android:layout_height="@dimen/dp60"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/lbInputBarcode"
+                android:layout_width="@dimen/dp120"
+                android:layout_height="match_parent"
+                android:maxWidth="@dimen/dp200"
+                android:gravity="center"
+                android:background="@drawable/shape_primary_color"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp20"
+                android:text="手输条码" />
+            <!--        <View-->
+            <!--            android:layout_width="10dp"-->
+            <!--            android:layout_height="@dimen/dp40"-->
+            <!--            android:layout_gravity="center"/>-->
+            <TextView
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_width="@dimen/dp120"
+                android:layout_height="match_parent"
+                android:maxWidth="@dimen/dp200"
+                android:gravity="center"
+                android:background="@drawable/shape_primary_color"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp20"
+                android:text="挂单" />
+            <TextView
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_width="@dimen/dp120"
+                android:layout_height="match_parent"
+                android:maxWidth="@dimen/dp200"
+                android:gravity="center"
+                android:background="@drawable/shape_primary_color"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp20"
+                android:text="挂单" />
+            <TextView
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_width="@dimen/dp120"
+                android:layout_height="match_parent"
+                android:maxWidth="@dimen/dp200"
+                android:gravity="center"
+                android:background="@drawable/shape_primary_color"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp20"
+                android:text="挂单" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_width="@dimen/dp120"
+            android:layout_height="match_parent"
+            android:maxWidth="@dimen/dp200"
+            android:gravity="center"
+            android:background="@color/darkorange2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp20"
+            android:text="现金结算" />
+        <TextView
+            android:id="@+id/btnPayOnline"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_width="@dimen/dp120"
+            android:layout_height="match_parent"
+            android:maxWidth="@dimen/dp200"
+            android:gravity="center"
+            android:background="@color/darkorange2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp20"
+            android:text="线上结算" />
+
+        <EditText
+            android:layout_width="@dimen/dp200"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp30"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/lbTime"
+            android:layout_width="@dimen/dp200"
+            android:layout_height="match_parent"
+            android:text="2024-01-01 10:00:00"
+            android:gravity="center_vertical"
+            android:textColor="@color/red_m"/>
+        <TextView
+            android:id="@+id/lbCashier"
+            android:layout_width="@dimen/dp180"
+            android:layout_height="match_parent"
+            android:text="1001"
+            android:gravity="center_vertical"
+            android:textColor="@color/red_m"/>
+        <TextView
+            android:id="@+id/lbSaleMan"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="match_parent"
+            android:text="1001"
+            android:gravity="center_vertical"
+            android:textColor="@color/red_m"/>
+        <TextView
+            android:id="@+id/lbMember"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="match_parent"
+            android:text="1001"
+            android:gravity="center_vertical"
+            android:textColor="@color/red_m"/>
+        <TextView
+            android:id="@+id/lbVipName"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="match_parent"
+            android:text="1001"
+            android:gravity="center_vertical"
+            android:textColor="@color/red_m"/>
+        <TextView
+            android:id="@+id/lbPosId"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="match_parent"
+            android:text="1001"
+            android:gravity="center_vertical"
+            android:textColor="@color/red_m"/>
+        <TextView
+            android:id="@+id/lbLastSheetText"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="match_parent"
+            android:text="1001"
+            android:gravity="center_vertical"
+            android:textColor="@color/red_m"/>
+        <TextView
+            android:id="@+id/lbLastAmtText"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="match_parent"
+            android:text="1001"
+            android:gravity="center_vertical"
+            android:textColor="@color/red_m"/>
+        <TextView
+            android:id="@+id/lbLastChgText"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="match_parent"
+            android:text="1001"
+            android:gravity="center_vertical"
+            android:textColor="@color/red_m"/>
+    </LinearLayout>
 
 
 </LinearLayout>

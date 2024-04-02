@@ -43,7 +43,6 @@ import cn.th.phonerf.activity.base.BaseActivity;
 import cn.th.phonerf.activity.pay.PayActivity;
 import cn.th.phonerf.activity.pay.PayXgActivity;
 import cn.th.phonerf.activity.pos.dialog.InputDialogFragment;
-import cn.th.phonerf.activity.pos.dialog.ShoppingBagDialogFragment;
 import cn.th.phonerf.activity.pos.other.AdapterSaleFlowList;
 import cn.th.phonerf.activity.pos.other.NoticeDialogListener;
 import cn.th.phonerf.activity.pos.present.PosPresenterImpl;
@@ -81,14 +80,14 @@ public class PosActivity extends BaseActivity implements IPosView, View.OnClickL
     TextView lbLastChgText;
 
     TextView lbInputBarcode;
-    TextView btnShoppingBag;
+//    TextView btnShoppingBag;
     TextView lbMessage;
     ImageView imgNoData;
 
     private TextView lbSaleTotalAmt;
     private TextView lbSaleTotalQty;
     private TextView lbMember;
-    private TextView btnPay;
+    private TextView btnPayOnline;
     ListView gvSaleFlow;
     private TextView lbInput;
     // endregion
@@ -201,11 +200,11 @@ public class PosActivity extends BaseActivity implements IPosView, View.OnClickL
             rightText.setOnClickListener(this);
 
             lbSaleTotalAmt = findViewById(R.id.lbSaleTotalAmt);
-            lbSaleTotalQty = findViewById(R.id.lbSaleTotalQty);
-            btnPay = findViewById(R.id.btnPay);
+//            lbSaleTotalQty = findViewById(R.id.lbSaleTotalQty);
+            btnPayOnline = findViewById(R.id.btnPayOnline);
             lbInput = findViewById(R.id.lbInput);
             lbInputBarcode = findViewById(R.id.lbInputBarcode);
-            btnShoppingBag = findViewById(R.id.btnShoppingBag);
+//            btnShoppingBag = findViewById(R.id.btnShoppingBag);
 
             lbMessage = (TextView)findViewById(R.id.lbMessage);
             lbCashier = (TextView)findViewById(R.id.lbCashier);
@@ -223,8 +222,8 @@ public class PosActivity extends BaseActivity implements IPosView, View.OnClickL
 
             lbMember.setOnClickListener(this);
             lbInputBarcode.setOnClickListener(this);
-            btnShoppingBag.setOnClickListener(this);
-            btnPay.setOnClickListener(this);
+//            btnShoppingBag.setOnClickListener(this);
+            btnPayOnline.setOnClickListener(this);
         }catch (Exception e){
             setToast("异常："+e);
         }
@@ -462,13 +461,13 @@ public class PosActivity extends BaseActivity implements IPosView, View.OnClickL
                 dlg.show(getFragmentManager(), "InputDialogFragment");
                 break;
             }
-            case R.id.btnShoppingBag:{
-                //presenter.doGetShoppingBagItem(null);
-                ShoppingBagDialogFragment dlg = new ShoppingBagDialogFragment();
-                //dlg.show(getSupportFragmentManager(), "InputDialogFragment");
-                dlg.show(getFragmentManager(), "ShoppingBagDialogFragment");
-                break;
-            }
+//            case R.id.btnShoppingBag:{
+//                //presenter.doGetShoppingBagItem(null);
+//                ShoppingBagDialogFragment dlg = new ShoppingBagDialogFragment();
+//                //dlg.show(getSupportFragmentManager(), "InputDialogFragment");
+//                dlg.show(getFragmentManager(), "ShoppingBagDialogFragment");
+//                break;
+//            }
             case R.id.btnPay: {
                 calcSheet();
                 if(_saleFlowList.size() == 0){

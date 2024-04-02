@@ -48,7 +48,7 @@
         </provider>
 
         <activity
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:name=".activity.systemsetup.SystemSetupActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -84,14 +84,14 @@
         <!--                 <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" /> -->
         <!--             </intent-filter> -->
         <!-- </service> -->
-        <service android:name=".service.FlowService" />
+<!--        <service android:name=".service.FlowService" />-->
 
         <activity
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:name=".activity.sync.SyncActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:name=".activity.pos.PosActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -100,86 +100,86 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:name=".activity.query.QueryActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:name=".activity.login.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize"/>
         <activity
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:name=".activity.example.ExampleActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:name=".activity.pay.PayActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:name=".activity.pay.PayXgActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:name=".activity.selbatch.SelBatchActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:name=".activity.selreceive.SelReceiveActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:name=".activity.setup.SetupActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:name=".activity.CommonScanActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:name=".activity.scanpaycode.ScanPayCodeActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:name=".activity.historyrpt.HistoryRptActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:name=".activity.selreceive.ReceiveRptActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:name=".activity.receive.ReceiveActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:name=".activity.report.RptActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:name=".wxapi.WXPayEntryActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true"

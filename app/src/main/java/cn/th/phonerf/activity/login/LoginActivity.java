@@ -74,7 +74,7 @@ public class LoginActivity extends BaseActivity implements ILoginView, View.OnCl
     CleanableEditText txtLoginPass;
     Button btnLogin;
     private TextView lbPhoneSn;
-    FloatingActionButton fabCancel;
+//    FloatingActionButton fabCancel;
 
     private RelativeLayout errLayout;
     private TextView errText, errBtn;
@@ -97,11 +97,11 @@ public class LoginActivity extends BaseActivity implements ILoginView, View.OnCl
     Button btnEditNumDot; // = (Button)view.findViewById(R.id.btnEditNumDot);
     Button btnEditNumBackspace; // = (Button)view.findViewById(R.id.btnEditNumBackspace);
 
-    TextView lbTest1;
-    TextView lbTest2;
-    TextView lbTest3;
-    TextView lbTest4;
-    TextView lbTest5;
+//    TextView lbTest1;
+//    TextView lbTest2;
+//    TextView lbTest3;
+//    TextView lbTest4;
+//    TextView lbTest5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -173,7 +173,7 @@ public class LoginActivity extends BaseActivity implements ILoginView, View.OnCl
             //
             //spShopId = (Spinner) findViewById(R.id.login_shop_info);
             lbPhoneSn = findViewById(R.id.login_lbDeviceSn);
-            fabCancel = findViewById(R.id.fabCancel);
+//            fabCancel = findViewById(R.id.fabCancel);
 
             //initShop();
             txtLoginLogin.setText("");
@@ -191,13 +191,13 @@ public class LoginActivity extends BaseActivity implements ILoginView, View.OnCl
             btnEditNum9 = findViewById(R.id.btnEditNum9);
             btnEditNumDot = findViewById(R.id.btnEditNumDot);
             btnEditNumBackspace = findViewById(R.id.btnEditNumBackspace);
-            lbTest1 = findViewById(R.id.lbTest1);
-            lbTest2 = findViewById(R.id.lbTest2);
-            lbTest3 = findViewById(R.id.lbTest3);
-            lbTest4 = findViewById(R.id.lbTest4);
-            lbTest5 = findViewById(R.id.lbTest5);
+//            lbTest1 = findViewById(R.id.lbTest1);
+//            lbTest2 = findViewById(R.id.lbTest2);
+//            lbTest3 = findViewById(R.id.lbTest3);
+//            lbTest4 = findViewById(R.id.lbTest4);
+//            lbTest5 = findViewById(R.id.lbTest5);
 
-            fabCancel.setOnClickListener(this);
+//            fabCancel.setOnClickListener(this);
             btnEditNum0.setOnClickListener(this);
             btnEditNum1.setOnClickListener(this);
             btnEditNum2.setOnClickListener(this);
@@ -210,11 +210,11 @@ public class LoginActivity extends BaseActivity implements ILoginView, View.OnCl
             btnEditNum9.setOnClickListener(this);
             btnEditNumDot.setOnClickListener(this);
             btnEditNumBackspace.setOnClickListener(this);
-            lbTest1.setOnClickListener(this);
-            lbTest2.setOnClickListener(this);
-            lbTest3.setOnClickListener(this);
-            lbTest4.setOnClickListener(this);
-            lbTest5.setOnClickListener(this);
+//            lbTest1.setOnClickListener(this);
+//            lbTest2.setOnClickListener(this);
+//            lbTest3.setOnClickListener(this);
+//            lbTest4.setOnClickListener(this);
+//            lbTest5.setOnClickListener(this);
         }catch (Exception e){
             setToast("异常："+e);
         }
@@ -318,9 +318,9 @@ public class LoginActivity extends BaseActivity implements ILoginView, View.OnCl
     public void onClick(View view) {
 
         switch (view.getId()){
-            case R.id.fabCancel:
-                finish();
-                break;
+//            case R.id.fabCancel:
+//                finish();
+//                break;
             case R.id.top_left_text:
 
                 break;
@@ -388,18 +388,7 @@ public class LoginActivity extends BaseActivity implements ILoginView, View.OnCl
                 }
                 break;
             }
-            case R.id.lbTest1:{
-                wxPayFaceInit();
-                break;
-            }
-            case R.id.lbTest2:{
-                getWxpayfaceRawdata();
-                break;
-            }
-            case R.id.lbTest3:{
-                get_wxpayface_authinfo();
-                break;
-            }
+
 
         }
     }
@@ -673,7 +662,7 @@ public class LoginActivity extends BaseActivity implements ILoginView, View.OnCl
 
                     Intent intent = new Intent(this, PosActivity.class);
                     startActivity(intent);
-                    finish();
+//                    finish();
                     break;
                 }
                /* case ApiConstants.BRANCH_LIST: {

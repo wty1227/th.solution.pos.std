@@ -11,7 +11,7 @@ android {
     }
     compileSdkVersion 28
     defaultConfig {
-        applicationId 'cn.th.solution.selfpos'
+        applicationId 'cn.th.solution.stdpos'
         minSdkVersion 22
         targetSdkVersion 28
         versionCode 1
@@ -36,6 +36,7 @@ android {
         }
     }
     compileOptions {
+        encoding "UTF-8"
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
